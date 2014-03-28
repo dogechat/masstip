@@ -2,10 +2,9 @@
 a = prompt('How many users do you wish to tip?', 5);
 b = Number(prompt('How much do you wish to tip each user?', 10));
 if (users[currentRoom].length - 1 < a && a && b) {
-    alert('There aren'
-        t that many users here!');}else if(Number($('#
-        balance ').html())<a*b){alert('
-        You don 't have enough doge for that!');
+    alert('There aren\'t that many users here!');
+} else if (Number($('#balance').html()) < a * b) {
+    alert('You don\'t have enough doge for that!');
 } else if (b < 5) {
     alert('You must tip at least 5 to each user!');
 } else {
