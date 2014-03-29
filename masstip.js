@@ -1,6 +1,6 @@
 // Actual mass tip js code in a nice format!
 if (document.location != "https://dogechat.net") {
-    if (currentRoom != ["main", "mods"]) {
+    if (currentRoom != "main") {
         a = prompt('How many users do you wish to tip?', 5);
         b = Number(prompt('How much do you wish to tip each user?', 10));
         if (users[currentRoom].length - 1 < a && a && b) {
