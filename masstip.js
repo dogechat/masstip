@@ -25,7 +25,7 @@ var time = 0;
 for (var i = 0; i < number + 1; i++) {
     if (username != users[currentRoom][i] && tips < number) {
         tips++;
-        time = time + 500;
+        time = time + 600;
         setTimeout(tip, time, users[currentRoom][i]);
     }
 }
