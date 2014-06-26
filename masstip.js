@@ -23,7 +23,7 @@ socket.emit('chat', {
 var tips = 0;
 var time = 0;
 for (var i = 0; i < number + 1; i++) {
-    if (username != users[currentRoom][i] && tips < number) {
+    if (username != users[currentRoom][i] && users[currentRoom][i].substr(-3) != 'bot' && tips < number) {
         tips++;
         time = time + 600;
         setTimeout(tip, time, users[currentRoom][i]);
